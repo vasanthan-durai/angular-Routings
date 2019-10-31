@@ -6,6 +6,20 @@ import { SecondComponent } from './second/second.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {  
+  MdToolbarModule,
+  MdTabsModule,
+  MdButtonModule,
+  MdInputModule,
+  MdDatepickerModule,
+  MdNativeDateModule,
+  MdCheckboxModule,
+  MdRadioModule
+ } from  '@angular/material';
+
+
+
 
 
 const appRoutes: Routes = [
@@ -27,11 +41,12 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,
+  imports:      [ BrowserModule,FormsModule ,  FormsModule, BrowserAnimationsModule, MdToolbarModule, MdTabsModule, MdButtonModule, MdInputModule, MdDatepickerModule, MdNativeDateModule, MdCheckboxModule, MdRadioModule ,
+  
   RouterModule.forRoot(   // configure in routmodule
       appRoutes
     )],
-  declarations: [ AppComponent, HelloComponent,HomeComponent,SecondComponent ],
+  declarations: [ AppComponent, HelloComponent,HomeComponent,SecondComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
