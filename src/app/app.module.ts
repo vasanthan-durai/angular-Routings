@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  MdToolbarModule,MdTabsModule,MdButtonModule,MdInputModule,MdDatepickerModule,MdNativeDateModule,MdCheckboxModule,
 MdRadioModule} from  '@angular/material';
-import { HomeComponent } from '../home/home.component';
-import { SecondComponent } from '../second/second.component';
+import { HomeComponent } from './home/home.component';
+import { SecondComponent } from './second/second.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -16,9 +16,9 @@ const appRoutes: Routes = [
   { path: 'home',      component: HomeComponent },
   { path: 'second',      component: SecondComponent },
   {
-    path: 'hello',
+    path: 'home',
     component: HelloComponent,
-    data: { title: 'hello' }
+    data: { title: 'home' }
   },
   { path: 'home',
     redirectTo: '/home'
