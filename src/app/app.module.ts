@@ -1,11 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home/home.component';
-import { SecondComponent } from './second/second.component';
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  
   MdToolbarModule,
@@ -17,6 +12,12 @@ import {
   MdCheckboxModule,
   MdRadioModule
  } from  '@angular/material';
+import { HomeComponent } from '../home/home.component';
+import { SecondComponent } from '../second/second.component';
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 
