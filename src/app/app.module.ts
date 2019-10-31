@@ -2,25 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {  
-  MdToolbarModule,
-  MdTabsModule,
-  MdButtonModule,
-  MdInputModule,
-  MdDatepickerModule,
-  MdNativeDateModule,
-  MdCheckboxModule,
-  MdRadioModule
- } from  '@angular/material';
+import {  MdToolbarModule,MdTabsModule,MdButtonModule,MdInputModule,MdDatepickerModule,MdNativeDateModule,MdCheckboxModule,
+MdRadioModule} from  '@angular/material';
 import { HomeComponent } from '../home/home.component';
 import { SecondComponent } from '../second/second.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RouterModule, Routes } from '@angular/router';
-
-
-
-
 
 
 const appRoutes: Routes = [
